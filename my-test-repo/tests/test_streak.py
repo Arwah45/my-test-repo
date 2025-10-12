@@ -39,5 +39,8 @@ class TestLongestPositiveStreak(unittest.TestCase):
     def test_multiple_streaks(self):
         self.assertEqual(longest_positive_streak([1, 2, 0, 3, 4, 5, 0, 6, 7]), 3)
 
+    def test_example_from_prompt(self):
+        self.assertEqual(longest_positive_streak([2, 3, -1, 5, 6, 7, 0, 4]), 3)
+
 if __name__ == '__main__':
     unittest.main()
